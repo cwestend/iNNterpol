@@ -15,10 +15,11 @@ and the fluxes (line profiles) calculated from these recovered atmospheres.
 
 The code is provided together with the SVD coefficients in order to be able to rapidly reconstruct each model atmosphere. 
 It also provides an extremely fast way of interpolating models between the calculated values. Models for areas (or grid values) where no data
-is available on one of the extremes can also be recovered. These regions can be considered as unbounded and thus a linear interpolation
-cannot be applied. Our iNNterpol method is able to learn from the data and give a smooth and reasonable values on these regions provided a 
-reasonable departure in distance from grid values that have calculated model data. A study of these regions, together with 
-the quality of the recovered models and the fluxes obtained from these shall be undertaken in a future paper.
+is available on one or more of the extremes of the grid values can also be recovered. These regions can be considered as 
+unbounded and thus a linear interpolation cannot be applied. Our iNNterpol method is able to learn from the data and give 
+a smooth and reasonable values on these regions provided a reasonable departure in distance from grid values that do have 
+calculated model data. A study of these regions, together with the quality of the recovered models and the fluxes obtained 
+from these shall be undertaken in a future paper.
 
 # Requirements:
 
