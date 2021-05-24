@@ -7,13 +7,14 @@ for a 5-dimensional grid, dimensions being the  metalicity M/H, carbon abundance
 Temperature and (log) surface Gravity. The iNNterpol not only recovers the four atmospheric parameters of mass, temperature, 
 pressure and electronic density at the grid points they were calculated for but also for intermediate values of these.
 
-Using the  ATLAS9 model data we trained a deep neural-network based on a previous 12-component Singular-Value Decomposition (SVD) of these models.
+Using the  ATLAS9 model data we trained a deep neural-network based on a previous 12-component Principal component analysis (PCA) 
+obtained by Singular-Value Decomposition (SVD) analysis of these models.
 
 The SVD guarantees a continuity in optical depth while reduced the dimensionality of the problem. A fully connected Neural Network (NN), was trained
-on the SVD coefficients. A 12-layer deep NN, with 40 nodes on each layer showed to give optimal results as shown on the recovered errors
+on the 12 PCA coefficients considered. A 12-layer deep NN, with 40 nodes on each layer showed to give optimal results as shown on the recovered errors
 and the fluxes (line profiles) calculated from these recovered atmospheres.
 
-The code is provided together with the SVD coefficients in order to be able to rapidly reconstruct each model atmosphere. 
+The code is provided together with the PCA coefficients in order to be able to rapidly reconstruct each model atmosphere. 
 It also provides an extremely fast way of interpolating models between the calculated values. Models for areas (or grid values) where no data
 is available on one or more of the extremes of the grid values can also be recovered. These regions can be considered as 
 unbounded and thus a linear interpolation cannot be applied. Our iNNterpol method is able to learn from the data and give 
@@ -30,6 +31,21 @@ Python 3.6/3.8 with Pytorch 11.1.
 
 
 ```
-# Data:
+## Data:
 
-Download the coefficients of the 12 component SVD from a [python .npz compressed file](https://cloud.iac.es/index.php/s/oNjrKkPHjn42fbe). 
+Download the coefficients of the 12 component PCA/SVD from a [python .npz compressed file](https://cloud.iac.es/index.php/s/oNjrKkPHjn42fbe). 
+
+## Files:
+
+Together with the above coefficient file, a model.py with the training model used is needed aswell as a *.pth file with the hyperparameters resulting from the NN training.
+
+```
+atlas9_covs_ind_coefflogs12.npz
+model.py
+<date-time>.pth
+
+```
+
+
+
+
