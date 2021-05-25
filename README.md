@@ -1,7 +1,9 @@
 # iNNterpol
 ### Neural Network Interpolator for Atlas9 stellar model atmospheres
 
-AThe aim is to obtain a fast and reliable way to recover the model atmospheres calculated for the ATLAS9 model data for the 
+[Temperature diff.](../assets/DTemp_chk12_M0_mp05_lgg45.png?raw=true)
+
+The aim is to obtain a fast and reliable way to recover the model atmospheres calculated for the ATLAS9 model data for the 
 APOGEE sky survey (see http://research.iac.es/proyecto/ATLAS-APOGEE//). These atmospheres were calculated
 for a 5-dimensional grid, dimensions being the  metalicity M/H, carbon abundance C/M, other-element abundance O/M, effective 
 Temperature and (log) surface Gravity. The iNNterpol not only recovers the four atmospheric parameters of mass, temperature, 
