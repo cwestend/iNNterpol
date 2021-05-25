@@ -67,7 +67,7 @@ and you can plot it out rebuilding the optical depths as in:
 
 ```
 
-and for the same price, you get a linear interpolator that when used on the grid values recovers the Atlas9 model atmosphere quite precisely (to less than 0.5% accuracy):
+and for the same price, you get a **linear interpolator** that when used on the grid values recovers the Atlas9 model atmosphere quite precisely (to less than 0.5% accuracy):
 
 ```
 % nn_model_lin = innterpol([0, 0, 0, 5500, 2.5], linear=True)
