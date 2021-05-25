@@ -27,7 +27,7 @@ from these shall be undertaken in a future paper.
 
 ```
 
-Python 3.6/3.8 with Pytorch 11.1.
+Python 3.6/3.8 with Pytorch 11.1 (possibly 10.2 is ok)
 
 
 ```
@@ -46,6 +46,32 @@ model.py
 
 ```
 
+## Usage
 
+Just run it in the directory with the above files, and you can get the interpolated atmosphere in (log) mass, temp, pressure and electronic density (indexes from 0 to 3). For example, to get the temperature for M/H = 0, C/M=O/M=0, Teff = 5000 and logg = 2.5 you can do in an interactive python shell:
+
+```
+% run "./innterpol.py"
+
+% nn_innterp = innterpol([0, 0, 0, 5500, 2.5])
+```
+
+and you can plot it out rebuilding the optical depths as in:
+
+```
+% taur = np.arange(-6.875, 2, 0.125)
+
+% import matplotlib.pyplot as pl 
+% pl.plot(taur, 10**nn_innterp[:,0])
+
+
+```
+
+and for the same price, you get a linear interpolator that when used o  the grid values recovers the Atlas9 model atmosphere pretty precisely (to less than 0.5% accuracy):
+
+```
+% nn_model_lin = innterpol([0, 0, 0, 5500, 2.5], linear=True)
+
+```
 
 
