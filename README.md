@@ -17,7 +17,7 @@ A 16-layer deep NN, with 40 nodes on each layer showed to give optimal results a
 and the fluxes (line profiles) calculated from these recovered atmospheres.
 
 (A similar approach with a 12 component Principal component analysis (PCA) obtained by Singular-Value Decomposition (SVD) analysis of these models
-was also undertaken and is shown in https://github.com/cwestend/iNNterpol_PCA12/).
+was also undertaken and is shown in https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_PCA12).
 
 
 The code is provided together with the trained weights of the CAE and NN in order to be able to rapidly reconstruct each model atmosphere. 
@@ -77,7 +77,7 @@ and you can plot it out rebuilding the optical depths as in:
 ```
 
 for a **linear interpolator** that when used on the grid values recovers the Atlas9 model atmosphere quite precisely (to less than 0.2% (rms) accuracy) 
-is found in https://github.com/cwestend/iNNterpol_PCA12/
+is found in https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_PCA12
 
 
 
