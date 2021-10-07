@@ -1,7 +1,7 @@
 # iNNterpol
 ### Neural Network Interpolator for Atlas9 stellar model atmospheres
 
-![Temperature differences between original and obtained untrained (test) atmospheres](../assets/DTemp_chk12_M0_mp05_lgg45.png?raw=true)
+![Temperature differences between original and obtained untrained (test) atmospheres](../../assets/DTemp_chk12_M0_mp05_lgg45.png?raw=true)
 (Fig1. plot of Temperature differences in % between original and obtained for untrained (test) atmospheres of metal-rich dwarf stars.)
 
 The aim is to obtain a fast and reliable way to recover the model atmospheres calculated for the ATLAS9 model data for the 
