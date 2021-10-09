@@ -18,7 +18,7 @@ Python 3.6/3.8
 
 Download the coefficients of the 12 component PCA/SVD from a [python .npz compressed file](https://cloud.iac.es/index.php/s/oNjrKkPHjn42fbe).
 
-Download the indexes used for training, valudating and testing (check) in the NN in a [python .npz compressed file](https://cloud.iac.es/index.php/s/XokeDEQ3eHowtwZ)..
+Download the indexes used for training, validating and testing (check) in the NN in a [python .npz compressed file](https://cloud.iac.es/index.php/s/XokeDEQ3eHowtwZ)..
 
 (optional) Download the full Atlas9 dataset (2.2Gb!) by a [python .npz compressed file](https://cloud.iac.es/index.php/s/aEBE2dAao4Wc6JF). 
 
