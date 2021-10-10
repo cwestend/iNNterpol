@@ -10,7 +10,7 @@ This is the data used to train both the CAE and the NN for https://github.com/cw
 
 ```
 
-Python 3.6/3.8 
+Python 3.6/3.8 with Pytorch 11.1 (possibly 10.2 is ok)
 
 
 ```
