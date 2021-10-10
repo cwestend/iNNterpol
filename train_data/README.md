@@ -80,5 +80,14 @@ This can be directly used for comparison with the model recovered by iNNterpol (
 % nn_innterp = innterpol(inp_val)
 
 ```
+Both plots are compared in the plot below:
+
+```
+% import matplotlib.pyplot as pl
+
+% pl.plot(taur, y_temp_model, label=r'$Atlas9\; 4500K,\: [M/H] = -0.25,\: [C/M] = -1.5,\: [\alpha/M] = 0.75,\: logg = 4.5$')
+% pl.plot(taur, nn_innterp[:,1], '-.', label=r'$iNNterpol\; 4500K,\: [M/H] = -0.25,\: [C/M] = -1.5,\: [\alpha/M] = 0.75,\: logg = 4.5$')
+
+```
 
 ![Temperature plot of original and obtained untrained (test) atmosphere](../../assets/Temp_CAE_16_71_Teff4500_lgg45_github.png?raw=true)
