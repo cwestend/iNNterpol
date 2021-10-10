@@ -65,11 +65,11 @@ To get the 71 points in depth of the temperature model:
 ```
 % data_slicelog = np.load('./atlas9_nn_slicelog_index.npz')
 % slicelogt = data_slicelog['slicelogt']
-%
+
 % y_temp_model = slicelogt[int(arr_ind_check[11][0]),:]
 ```
 
-This can be directly used for comparison with the model recovered by iNNterpol:
+This can be directly used for comparison with the model recovered by iNNterpol (see https://github.com/cwestend/iNNterpol):
 
 
 ```
@@ -77,6 +77,7 @@ This can be directly used for comparison with the model recovered by iNNterpol:
 
 % inp_val =  np.array((arr_ind_check[11][1], arr_ind_check[11][2], arr_ind_check[11][3],
                        arr_ind_check[11][4], arr_ind_check[11][5]/10.))
-%  nn_innterp = innterpol(inp_val)
+% nn_innterp = innterpol(inp_val)
 
 ```
+
