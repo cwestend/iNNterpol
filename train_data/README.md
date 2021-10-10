@@ -81,3 +81,4 @@ This can be directly used for comparison with the model recovered by iNNterpol (
 
 ```
 
+![Temperature plot of original and obtained untrained (test) atmosphere](../../assets/Temp_CAE_16_71_Teff4500_lgg45_github.png?raw=true)
