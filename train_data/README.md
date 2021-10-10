@@ -49,7 +49,34 @@ Run the check_cae_nn_atlas9.py in the directory with the above files to get the 
 to get the validation indexes instead:
 
 ```
-% arr_ind_check, value_index, arr_ind_check_d = check_nn(check=False)
+% arr_ind_valid, value_index, arr_ind_valid_d = check_nn(check=False)
 ```
 
+These indexes are key to recovering the models used for test/validating. For instance, to recover the parameters for the model number 12:
 
+```
+% arr_ind_check[11]
+% array([584778.0, -0.25, -1.5, 0.75, 4500.0, 45.0], dtype=object)
+```
+where the first number is the index of the flattened array that can be obtained from the actual data (full model set file atlas9_nn_slicelog_index.npz).
+The rest are the parameters: [M/H], [C/M], [O/M], Teff and 10*logg.
+To get the 71 points in depth of the temperature model:
+
+```
+% data_slicelog = np.load('./atlas9_nn_slicelog_index.npz')
+% slicelogt = data_slicelog['slicelogt']
+%
+% y_temp_model = slicelogt[int(arr_ind_check[11][0]),:]
+```
+
+This can be directly used for comparison with the model recovered by iNNterpol:
+
+
+```
+% run "./innterpol.py"
+
+% inp_val =  np.array((arr_ind_check[11][1], arr_ind_check[11][2], arr_ind_check[11][3],
+                       arr_ind_check[11][4], arr_ind_check[11][5]/10.))
+%  nn_innterp = innterpol(inp_val)
+
+```
