@@ -1,8 +1,11 @@
 # iNNterpol
-### Neural Network Interpolator for Atlas9 stellar model atmospheres
+### Neural Network Interpolator for Atlas9/MARCS/Phoenix stellar model atmospheres
 
 ![Temperature differences between original and obtained untrained (test) atmospheres](../assets/DTemp_chkCAE_16_71_M0_mp05_lgg45_scale.png?raw=true)
 (Fig1. plot of Temperature differences in % between original and obtained for untrained (test) atmospheres of metal-rich dwarf stars.)
+
+NOTE: For MARCS model iNNterpolator visit:  https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_MARCS
+For PHOENIX model iNNterpolator visit:  https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_PHOENIX
 
 The aim is to obtain a fast and reliable way to recover the model atmospheres calculated for the ATLAS9 model data for the 
 APOGEE sky survey (see http://research.iac.es/proyecto/ATLAS-APOGEE//). These atmospheres were calculated
