@@ -13,7 +13,7 @@ pressure and electronic density at the grid points they were calculated for but 
 Using the MARCS model data we trained a deep neural-network based on a previous Convolutional Auto-Encoder (CAE)
 that reduces the features of these models to a reduced parameter space (71 nodes). 
 
-A 22-layer deep NN, with 50 nodes on each layer trained on the output of the 71 node CAE for all four input ([M/H], [C/M], [O/M], Teff. and logGravity) parameters simultaneously, showed to give optimal results as shown on the recovered errors
+A 22-layer deep NN, with 50 nodes on each layer trained on the output of the 71 node CAE for all four input ([M/H], [C/M], [A/M], Teff. and logGravity) parameters simultaneously, showed to give optimal results as shown on the recovered errors
 and the fluxes (line profiles) calculated from these recovered atmospheres.
 
 
@@ -54,7 +54,7 @@ model_encoder.py
 
 ## Usage
 
-Just run it in the directory with the above files, and you can get the interpolated atmosphere in (log) mass, temp, pressure and electronic density (indexes from 0 to 3). For example, to get the temperature for M/H = 0, C/M=O/M=0, Teff = 5000 and logg = 2.5 you can do in an interactive python shell:
+Just run it in the directory with the above files, and you can get the interpolated atmosphere in (log) mass, temp, pressure and electronic density (indexes from 0 to 3). For example, to get the temperature for M/H = 0, C/M=A/M=0, Teff = 5000 and logg = 2.5 you can do in an interactive python shell:
 
 ```
 % run "./innterpol.py"
