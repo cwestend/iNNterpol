@@ -59,7 +59,7 @@ Just run it in the directory with the above files, and you can get the interpola
 ```
 % run "./innterpol.py"
 
-% taur, nn_innterp = innterpol([0, 0, 0, 5500, 2.5])
+% nn_innterp, taur = innterpol([0, 0, 0, 5500, 2.5])
 ```
 
 and you can plot it out rebuilding the optical depths as in:

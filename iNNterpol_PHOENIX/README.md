@@ -57,12 +57,12 @@ model_encoder.py
 
 ## Usage
 
-Just run it in the directory with the above files, and you can get the interpolated atmosphere in (log) mass, temp, pressure and electronic density (indexes from 0 to 3). For example, to get the temperature for M/H = 0, C/M=O/M=0, Teff = 5000 and logg = 2.5 you can do in an interactive python shell:
+Just run it in the directory with the above files, and you can get the interpolated atmosphere in (log) mass, temp, pressure and electronic density (indexes from 0 to 3). For example, to get the temperature for M/H = 0, Other/M=0, Teff = 5000 and logg = 2.5 you can do in an interactive python shell:
 
 ```
 % run "./innterpol.py"
 
-% taur, nn_innterp = innterpol([0, 0, 0, 5500, 2.5])
+% nn_innterp, taur = innterpol([0, 0, 5500, 2.5])
 ```
 
 and you can plot it out rebuilding the optical depths as in:
@@ -70,6 +70,7 @@ and you can plot it out rebuilding the optical depths as in:
 ```
 
 % import matplotlib.pyplot as pl 
+% pl.xscale('log')
 % pl.plot(taur, 10**nn_innterp[:,0])
 
 
