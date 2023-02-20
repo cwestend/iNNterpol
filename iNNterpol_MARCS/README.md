@@ -11,9 +11,9 @@ Temperature and (log) surface Gravity. The iNNterpol not only recovers the four 
 pressure and electronic density at the grid points they were calculated for but also for intermediate values of these.
 
 Using the MARCS model data we trained a deep neural-network based on a previous Convolutional Auto-Encoder (CAE)
-that reduces the features of these models to a reduced parameter space. 
+that reduces the features of these models to a reduced parameter space (71 nodes). 
 
-A 22-layer deep NN, with 50 nodes on each layer showed to give optimal results as shown on the recovered errors
+A 22-layer deep NN, with 50 nodes on each layer trained on the output of the 71 node CAE for all four input ([M/H], [C/M], [O/M], Teff. and logGravity) parameters simultaneously, showed to give optimal results as shown on the recovered errors
 and the fluxes (line profiles) calculated from these recovered atmospheres.
 
 
