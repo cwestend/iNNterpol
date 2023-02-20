@@ -1,7 +1,7 @@
 # iNNterpol (MARCS)
 ### Neural Network Interpolator for MARCS stellar model atmospheres
 
-![Temperature differences between original and obtained untrained (test) atmospheres](../assets/DTemp_chkCAE_16_71_resnet_MARCS_mp05_lgg45_scale.png?raw=true)
+![Temperature differences between original and obtained untrained (test) atmospheres](../../assets/DTemp_chkCAE_16_71_resnet_MARCS_mp05_lgg45_scale.png?raw=true)
 (Fig1. plot of Temperature differences in % between original and obtained for untrained (test) atmospheres of metal-rich dwarf stars.)
 
 The aim is to obtain a fast and reliable way to recover the model atmospheres calculated for the MARCS dataset as described in Gustafsson B., Edvardsson B., Eriksson K., Jorgensen U.G., Nordlund A., Plez B. 2008, Astronomy & Astrophysics 486, 951
