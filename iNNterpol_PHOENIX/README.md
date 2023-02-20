@@ -1,8 +1,7 @@
 # iNNterpol (PHOENIX)
 ### Neural Network Interpolator for PHOENIX stellar model atmospheres
 
-![Temperature differences between original and obtained untrained (test) atmospheres](../../assets/DTemp_chkCAE_22_128_PHOENIX_10pct.png?raw=true)
-
+![Temperature differences between original and obtained untrained (test) atmospheres](../../assets/DTemp_chkCAE_22_128_PHOENIX_10pct.png?raw=true). 
 (Fig1. plot of Temperature differences in % between original and obtained for untrained (test) atmospheres of metal-rich dwarf stars.)
 
 ![Temperature differences in Kelvin between original and obtained untrained (test) atmospheres](../../assets/DTemp_Stats_chkCAE_16_96_PHOENIX_mp05_lgg45_scale.png?raw=true)
