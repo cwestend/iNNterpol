@@ -36,10 +36,11 @@ check_cae_nn_atlas9.py
 
 ```
 
-## Acknowledgements
+## Acknowledgements:
 
-If using the data please cite: "NEW ATLAS9 AND MARCS MODEL ATMOSPHERE GRIDS FOR THE APACHE POINT OBSERVATORY GALACTIC EVOLUTION EXPERIMENT (APOGEE)"
-Sz. Mészáros[^1],2, C. Allende Prieto1,2, B. Edvardsson3, F. Castelli4, A. E. García Pérez5, B. Gustafsson3, S. R. Majewski5, B. Plez6, R. Schiavon7, M. Shetrone8, and A. de Vicente1,2
+If using the data please cite: 
+> NEW ATLAS9 AND MARCS MODEL ATMOSPHERE GRIDS FOR THE APACHE POINT OBSERVATORY GALACTIC EVOLUTION EXPERIMENT (APOGEE)
+> Sz. Mészáros[^1],2, C. Allende Prieto1,2, B. Edvardsson3, F. Castelli4, A. E. García Pérez5, B. Gustafsson3, S. R. Majewski5, B. Plez6, R. Schiavon7, M. Shetrone8, and A. de Vicente1,2
 
 [^1] Instituto de Astrofísica de Canarias (IAC), E-38200 La Laguna, Tenerife, Spain
 
