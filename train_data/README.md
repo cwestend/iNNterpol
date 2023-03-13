@@ -36,6 +36,30 @@ check_cae_nn_atlas9.py
 
 ```
 
+## Acknowledgements
+
+If using the data please cite: "NEW ATLAS9 AND MARCS MODEL ATMOSPHERE GRIDS FOR THE APACHE POINT OBSERVATORY GALACTIC EVOLUTION EXPERIMENT (APOGEE)"
+Sz. Mészáros[^1],2, C. Allende Prieto1,2, B. Edvardsson3, F. Castelli4, A. E. García Pérez5, B. Gustafsson3, S. R. Majewski5, B. Plez6, R. Schiavon7, M. Shetrone8, and A. de Vicente1,2
+
+[^1] Instituto de Astrofísica de Canarias (IAC), E-38200 La Laguna, Tenerife, Spain
+
+2 Departamento de Astrofísica, Universidad de La Laguna (ULL), E-38206 La Laguna, Tenerife, Spain
+
+3 Department of Physics and Astronomy, Division of Astronomy and Space Physics, Box 515, SE-751 20 Uppsala, Sweden
+
+4 Istituto Nazionale di Astrofisica, Osservatorio Astronomico di Trieste, via Tiepolo 11, I-34143 Trieste, Italy
+
+5 Department of Astronomy, University of Virginia, P.O. Box 400325, Charlottesville, VA 22904-4325, USA
+
+6 Laboratoire Univers et Particules de Montpellier, Université Montpellier 2, CNRS, F-34095 Montpellier, France
+
+7 Gemini Observatory, 670 North A'ohoku Place, Hilo, HI 96720, USA
+
+8 McDonald Observatory, University of Texas, Austin, TX 78712, USA
+
+ADS: https://ui.adsabs.harvard.edu/abs/2012AJ....144..120M/abstract
+DOI: 10.1088/0004-6256/144/4/120
+
 ## Usage
 
 Run the check_cae_nn_atlas9.py in the directory with the above files to get the indexes needed to reconstruct the models used for checking (test):
