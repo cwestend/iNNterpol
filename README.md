@@ -23,7 +23,8 @@ and the fluxes (line profiles) calculated from these recovered atmospheres.
 was also undertaken and is shown in https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_PCA12).
 
 
-The code is provided together with the trained weights of the CAE and NN in order to be able to rapidly reconstruct each model atmosphere. 
+The code is provided together with the trained weights of the CAE and NN in order to be able to rapidly reconstruct each model atmosphere.
+The full training code is available also for full reproducibility: https://github.com/cwestend/iNNterpol/tree/main/training_MARCS 
 
 It also provides an extremely fast way of interpolating models between the calculated values. Models for areas (or grid values) where no data
 is available on one or more of the extremes of the grid values can also be recovered. These regions can be considered as 
@@ -43,7 +44,7 @@ Python 3.6/3.8 with Pytorch 11.1 (possibly 10.2 is ok)
 ```
 ## Data:
 
-No need to download any data!. 
+No need to download any data! (just the weights, ofc) 
 
 ## Files:
 
@@ -82,5 +83,8 @@ and you can plot it out rebuilding the optical depths as in:
 for a **linear interpolator** that when used on the grid values recovers the Atlas9 model atmosphere quite precisely (to less than 0.2% (rms) accuracy) 
 is found in https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_PCA12
 
+## Training
 
+For full disclosure, all the numpy compressed data, the models (CAE and NN) and the programs to do the complete training are available. 
+See https://github.com/cwestend/iNNterpol/tree/main/training_MARCS (for training on the MARCS grid of models). 
 
