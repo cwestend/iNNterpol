@@ -33,6 +33,8 @@ train_marcs_cae.py
 
 model_cuatro.py
 
+marcs_slicelog_index.npz
+
 ```
 
 ## Acknowledgements:
