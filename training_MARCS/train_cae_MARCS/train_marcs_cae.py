@@ -8,7 +8,7 @@ Trains the weights of a CAE on log10 data of MARCS model atmospheres.
 The model is defined in model_cuatro.py where the four input layers (mass, temp, press and electron density)
 of the MARCS model are the input (thus 56 steps in logtau) and the bottleneck of 71 is created as
 the result of the encoder. The decoder is the inverse of the encoder and tries to reproduce the input
-as clkose as possible.
+as close as possible.
 
 The resulting weights in .pth format (pyTorch) are saved in the folder weights_marcs_cae_71/*.pth
 These weights together with the model file (model_cuatro.py) are used in a fully-connected NN
@@ -45,7 +45,7 @@ class Dataset(torch.utils.data.Dataset):
     Dataset class that will provide data during training. Modify it accordingly
     for your dataset. 
     """
-    def __init__(self, n_training):
+    def __init__(self):
         
         super(Dataset, self).__init__()
 
@@ -188,8 +188,13 @@ class Training(object):
         print('N. total parameters : {0}'.format(sum(p.numel() for p in self.model_cuatro.parameters() if p.requires_grad)))
 
         # Instantiate the dataset. We only use one dataset and then do the splitting training/validation
-        self.dataset = Dataset(n_training=400000)
+        self.dataset = Dataset()
 
+        # Generate an index for all elements of the training set and shuffle
+        print('n_training = %f' % self.dataset.n_training)
+        idx = np.arange(self.dataset.n_training)
+        np.random.shuffle(idx)
+        
         print("n_training : {0}".format(self.dataset.n_training))
         
         # We then split the indices in training/validation
