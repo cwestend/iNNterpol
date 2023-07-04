@@ -7,6 +7,8 @@
 ![Temperature differences in Kelvin between original and obtained untrained (test) atmospheres](../../assets/DTemp_Stats_chkCAE_16_96_PHOENIX_mp05_lgg45_scale.png?raw=true)<br>
 (Fig1. plot of Temperature differences in K as above, with added RMS values)
 
+**In press!** The paper is accepted and in press in Astronomy & Astrophisics, if you use the code, please cite it by its DOI: https://doi.org/10.1051/0004-6361/202346372. A pre-print version is available at https://arxiv.org/abs/2306.06938.
+
 The aim is to obtain a fast and reliable way to recover the model atmospheres calculated for the PHOENIX dataset as described in 
 T.-O. Husser, S. Wende-von Berg, S. Dreizler, D. Homeier, A. Reiners, T. Barman and P. H. Hauschildt A&A 553, A6 (2013, https://doi.org/10.1051/0004-6361/201219058). These atmospheres were calculated
 for a 4-dimensional grid, dimensions being the  metalicity M/H, carbon abundance C/M, effective 
