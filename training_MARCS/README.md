@@ -1,9 +1,10 @@
 # iNNterpol - training of the NN with a CAE (MARCS model data)
 ### Neural Network Interpolator for MARCS stellar model atmospheres (NN with a 71 element CAE)
 
-
 This is the final training of the NN to obrain the iNNterpol-MARCS. It needs the weights as explained in 
 https://github.com/cwestend/iNNterpol/tree/main/training_MARCS/train_cae_MARCS/
+
+**In press!** The paper is accepted and in press in Astronomy & Astrophisics, if you use the code, please cite it by its DOI: https://doi.org/10.1051/0004-6361/202346372. A pre-print version is available at https://arxiv.org/abs/2306.06938.
 
 # Requirements:
 
