@@ -4,6 +4,8 @@
 ![Temperature differences between original and obtained untrained (test) atmospheres](../../assets/DTemp_chk12_M0_mp05_lgg45.png?raw=true)
 (Fig2. plot of Temperature differences in % between original and obtained for untrained (test) atmospheres of metal-rich dwarf stars.)
 
+**In press!** The paper is accepted and in press in Astronomy & Astrophisics, if you use the code, please cite it by its DOI: https://doi.org/10.1051/0004-6361/202346372. A pre-print version is available at https://arxiv.org/abs/2306.06938.
+
 The aim is to obtain a fast and reliable way to recover the model atmospheres calculated for the ATLAS9 model data for the 
 APOGEE sky survey (see http://research.iac.es/proyecto/ATLAS-APOGEE//). These atmospheres were calculated
 for a 5-dimensional grid, dimensions being the  metalicity M/H, carbon abundance C/M, other-element abundance O/M, effective 
