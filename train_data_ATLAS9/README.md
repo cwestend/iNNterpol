@@ -4,6 +4,7 @@
 
 This is the data used to train both the CAE and the NN for https://github.com/cwestend/iNNterpol
 
+**In press!** The paper is accepted and in press in Astronomy & Astrophisics, if you use the code, please cite it by its DOI: https://doi.org/10.1051/0004-6361/202346372. A pre-print version is available at https://arxiv.org/abs/2306.06938.
 
 # Requirements:
 
