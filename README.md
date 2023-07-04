@@ -4,7 +4,7 @@
 ![Temperature differences between original and obtained untrained (test) atmospheres](../assets/DTemp_chkCAE_16_71_M0_mp05_lgg45_scale.png?raw=true)
 (Fig1. plot of Temperature differences in % between original and obtained for untrained (test) atmospheres of metal-rich dwarf stars.)
 
-In press! The paper is in press, if you use the code, please cite it by its DOI: https://doi.org/10.1051/0004-6361/202346372. A pre-print version is available at https://arxiv.org/abs/2306.06938.
+**In press!** The paper is accepted and in press in Astronomy & Astrophisics, if you use the code, please cite it by its DOI: https://doi.org/10.1051/0004-6361/202346372. A pre-print version is available at https://arxiv.org/abs/2306.06938.
 
 NOTE: For MARCS model iNNterpolator visit:  https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_MARCS
 For PHOENIX model iNNterpolator visit:  https://github.com/cwestend/iNNterpol/tree/main/iNNterpol_PHOENIX
